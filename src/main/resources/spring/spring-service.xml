@@ -31,11 +31,11 @@
     </tx:advice>
 
     <!-- 配置aop代理对象 -->
-    <!--<aop:config proxy-target-class="true">-->
-        <!--<aop:pointcut id="xxx"-->
-                      <!--expression="execution(* com.wtu.service.ItemsServiceImpl.*(..))"/>-->
-        <!--<aop:advisor advice-ref="tx_advice" pointcut-ref="xxx"/>-->
-    <!--</aop:config>-->
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="xxx"
+                      expression="execution(* com.wtu.service.impl.UserServiceImpl.*(..))"/>
+        <aop:advisor advice-ref="tx_advice" pointcut-ref="xxx"/>
+    </aop:config>
 
     <!-- 开启spring注解 -->
     <context:annotation-config/>

@@ -16,7 +16,6 @@ import javax.annotation.Resource;
 
 /**
  * 测试MyBatis
- * <p>
  * menglanyingfei
  * on 2017.11.02 14:56
  */
